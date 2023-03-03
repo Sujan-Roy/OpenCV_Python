@@ -13,7 +13,9 @@ conda install -c conda-forge opencv
 For Windows:
 pip install opencv-python
 ```
-
+This repositry contain the following files.
+1. How to install and used OpenCv in kaggel
+2. Different type of kernel operation on Image and Image Annotation (text, Rectangle)
 
 
 ## Authors
