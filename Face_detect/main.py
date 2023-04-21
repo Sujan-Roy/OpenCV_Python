@@ -11,7 +11,7 @@ for index in range(10):
         break
     else:
         cap.release()
-result, img = cap.read()
+#result, img = cap.read()
 
 while 1:
     ret, imag = cap.read()
