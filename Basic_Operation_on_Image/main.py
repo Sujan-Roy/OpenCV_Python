@@ -1,5 +1,6 @@
 # To find the image height, width and channel
 import cv2
+import matplotlib.pyplot as plt
 
 img = cv2.imread("flower.jpg")
 gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
@@ -19,7 +20,7 @@ height= gray.shape[0]
 width= gray.shape[1]
 
 img_size= gray.size
-import matplotlib.pyplot as plt
+
 
 print("Image Heightz: ",height)
 print("Image Width: ",width)
