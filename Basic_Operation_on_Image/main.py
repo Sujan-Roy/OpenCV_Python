@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 img = cv2.imread("flower.jpg")
 gray= cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+# To show the orginal Image
 #cv2.imshow("Orginal Image",gray)
 
 height= img.shape[0]
