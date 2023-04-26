@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 # Read the input image
 image = cv2.imread("dataset/flower.jpg")
 image2 = cv2.imread("dataset/cat.jpg")
+image3 = cv2.imread("dataset/dog.jpg")
 
 plt.subplot(2,3,1)
 plt.title("Orginal Image")
@@ -30,6 +31,15 @@ rectange= cv2.rectangle(image2,(350,200),(10,10),(0,255,0),5)
 plt.subplot(2,3,4)
 plt.title("Rectange Image")
 plt.imshow(rectange)
+
+Elipsis = cv2.ellipse(image3,(150,170),(90,30),15,0,360,(255,135,0),-1)
+Text= cv2.putText(Elipsis,'Ellipise Image',(20,60),cv2.FONT_HERSHEY_PLAIN,3,(255,120,255),3)
+plt.subplot(2,3,5)
+plt.title("Ellipse Image")
+plt.imshow(Text)
+
+
+
 # titles = ["Orginal Image","circle Image"]
 # images= [image,circle]
 # count = 2
