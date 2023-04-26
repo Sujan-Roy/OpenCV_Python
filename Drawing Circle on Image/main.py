@@ -2,6 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 # Read the input image
 image = cv2.imread("dataset/flower.jpg")
+image2 = cv2.imread("dataset/cat.jpg")
 
 plt.subplot(2,3,1)
 plt.title("Orginal Image")
@@ -23,7 +24,12 @@ plt.subplot(2,3,3)
 plt.title("Circle Image2")
 plt.imshow(circle2)
 
+# Rectange on Image
 
+rectange= cv2.rectangle(image2,(350,200),(10,10),(0,255,0),5)
+plt.subplot(2,3,4)
+plt.title("Rectange Image")
+plt.imshow(rectange)
 # titles = ["Orginal Image","circle Image"]
 # images= [image,circle]
 # count = 2
