@@ -10,10 +10,10 @@ if not os.path.exists(newPath):
     os.makedirs(newPath)
 
 
-image = cv2.imread("dataset/dog.jpg")
+image = cv2.imread("dataset/flower.jpg")
 output_image=remove(image)
 
-output_path = os.path.join(newPath, "dog.jpg")
+output_path = os.path.join(newPath, "flower.jpg")
 cv2.imwrite(output_path, output_image)
 
 #output_image.save("newPath/dog.jpg")
