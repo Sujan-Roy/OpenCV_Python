@@ -3,11 +3,11 @@ import os
 from rembg import remove
 import matplotlib.pyplot as plt
 
-newPath="Output_Image_directory/"
+newPathDirectory="Output_Image_directory/"
 
 #Create new directory if the diserd directory is not exist
-if not os.path.exists(newPath):
-    os.makedirs(newPath)
+if not os.path.exists(newPathDirectory):
+    os.makedirs(newPathDirectory)
 
 
 image = cv2.imread("dataset/flower.jpg")
