@@ -12,6 +12,7 @@ eye_casecade = cv2.CascadeClassifier('haarcascade_eye.xml')
 #     else:
 #         cap.release()
 #result, img = cap.read()
+
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 while True:
